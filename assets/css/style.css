@@ -3238,8 +3238,7 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
   display: flex;
   position: relative;
   z-index: 1;
-  margin-bottom: 2em;
-  margin-bottom: var(--space-lg);
+  margin-bottom: 0em;
 }
 .cd-timeline__block:last-child {
   margin-bottom: 0;
