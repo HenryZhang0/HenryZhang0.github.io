@@ -5,7 +5,7 @@ hideAll();
 		this.blocks = this.element.getElementsByClassName("cd-timeline__block");
 		this.images = this.element.getElementsByClassName("cd-timeline__img");
 		this.contents = this.element.getElementsByClassName("cd-timeline__content");
-		this.offset = 0.8;
+		this.offset = 0.85;
 		this.hideBlocks();
 	};
 
