@@ -3267,8 +3267,15 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
     0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 .cd-timeline__img img {
-  width: 24px;
-  height: 24px;
+  display: inline-block;
+  object-fit: cover;
+  width: 55px;
+  max-height: 90%;
+  height: 60px;
+  margin: 5px;
+  border-radius: 50%;
+  background-position: center center;
+  background-size: cover;
 }
 @media (min-width: 64rem) {
   .cd-timeline__img {
@@ -3284,8 +3291,7 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
   }
 }
 .cd-timeline__img--picture {
-  background-color: hsl(111, 51%, 60%);
-  background-color: var(--cd-color-4);
+  
 }
 .cd-timeline__img--movie {
   background-color: hsl(356, 53%, 49%);
