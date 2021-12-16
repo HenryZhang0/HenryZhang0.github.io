@@ -4,14 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <script>
+    document.getElementsByTagName("html")[0].className += " js";
+  </script>
   <link rel="stylesheet" href="assets/css/style.css">
   <title>MUSIC110 TIMELINE</title>
 </head>
 
 <body>
   <header class="cd-main-header text-center flex flex-column flex-center">
-    <h1>MUSIC110 - MUSICAL TIMELINE </h1> 
+    <h1>MUSIC110 - MUSICAL TIMELINE </h1>
 
 
 
@@ -44,22 +46,22 @@
   <section class="cd-timeline js-cd-timeline">
     <div class="container max-width-lg cd-timeline__container">
 
-      
 
-      <!-- SECTION -->
+
       <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--picture"> <img src="assets/img/cd-icon-picture.svg"
-            alt="Picture"> </div>
+        <div class="cd-timeline__img cd-timeline__img--location">
+          <img src="assets/img/cd-icon-location.svg" alt="Location">
+        </div> <!-- cd-timeline__img -->
+
         <div class="cd-timeline__content text-component">
-          <h2>"Immigrants" from The Hamilton Mixtape - K'naan, Snow that Product, Riz MC, and Residente</h2> <!--TITLE-->
-          Tags:
-          <p class="color-contrast-medium">All, Contemporary, Hip-hop, Society</p> <!-- TAGS -->
-          <iframe class="spotify" src="https://open.spotify.com/embed/track/0bPREZOF43e3EIu0zdfLBp?si=044500169c08465e"
-            width="100%" height="380" frameBorder="0" allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-          <!-- SPOTIFY -->
-          <span class="cd-timeline__date">2016</span> <!-- DATE -->
-          <a href="#0" class="btn btn--subtle">Read more</a> <!-- BUTTON -->
+          <h2>Post-modern</h2>
+          <p class="color-contrast-medium" style="display: none;">All, Post-modern</p>
+          <p class="color-contrast-medium">From 1960~current, music in the Post-modern era follows the aesthetic
+            movement, preferring more atonality and dissonance. </p>
+
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date"></span>
+          </div>
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
 
@@ -68,7 +70,26 @@
         <div class="cd-timeline__img cd-timeline__img--picture"> <img src="assets/img/cd-icon-picture.svg"
             alt="Picture"> </div>
         <div class="cd-timeline__content text-component">
-          <h2>Sunday Candy - Chance the Rapper</h2> <!--TITLE-->
+          <h2>"Immigrants" from The Hamilton Mixtape - K'naan, Snow that Product, Riz MC, and Residente</h2>
+          <!--TITLE-->
+          Tags:
+          <p class="color-contrast-medium">All, Contemporary, Hip-hop, Society</p> <!-- TAGS -->
+          <iframe class="spotify" src="https://open.spotify.com/embed/track/0bPREZOF43e3EIu0zdfLBp?si=044500169c08465e"
+            width="100%" height="380" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          <!-- SPOTIFY -->
+          <span class="cd-timeline__date">2016</span> <!-- DATE -->
+          <a href="#0" class="btn btn--subtle" onclick="spotifyFunction()">Read more</a> <!-- BUTTON -->
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <!-- SECTION -->
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--picture"> <img src="assets/img/cd-icon-picture.svg"
+            alt="Picture"> </div>
+        <div class="cd-timeline__content text-component">
+          <h2>Sunday Candy - Chance the Rapper</h2>
+          <!--TITLE-->
           Tags:
           <p class="color-contrast-medium">All, Rap/Hip-hop, Contemporary, Church</p> <!-- TAGS -->
           <iframe class="spotify" src="https://open.spotify.com/embed/track/6fTdcGsjxlAD9PSkoPaLMX?si=198dad688a4d4212"
@@ -80,13 +101,14 @@
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
 
-      
+
       <!-- SECTION -->
       <div class="cd-timeline__block">
         <div class="cd-timeline__img cd-timeline__img--picture"> <img src="assets/img/cd-icon-picture.svg"
             alt="Picture"> </div>
         <div class="cd-timeline__content text-component">
-          <h2>Battle of Yorktown - Lin-Manuel Miranda</h2> <!--TITLE-->
+          <h2>Battle of Yorktown - Lin-Manuel Miranda</h2>
+          <!--TITLE-->
           Tags:
           <p class="color-contrast-medium">All, Contemporary, Hip-hop, Society, Identity</p> <!-- TAGS -->
           <iframe class="spotify" src="https://open.spotify.com/embed/track/733tju3KUeatsbjcTRQ04i?si=56b84e10810f4f02"
@@ -105,11 +127,12 @@
 
         <div class="cd-timeline__content text-component">
           <h2>Post-modern</h2>
-          <p class="color-contrast-medium">Baroque</p>
+          <p class="color-contrast-medium" style="display: none;">All, Post-modern</p>
+          <p class="color-contrast-medium">From 1960~current, music in the Post-modern era follows the aesthetic
+            movement, preferring more atonality and dissonance. </p>
 
           <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Feb 18</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
+            <span class="cd-timeline__date"></span>
           </div>
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
@@ -120,7 +143,8 @@
         <div class="cd-timeline__img cd-timeline__img--picture"> <img src="assets/img/cd-icon-picture.svg"
             alt="Picture"> </div>
         <div class="cd-timeline__content text-component">
-          <h2>"Tuning Meditations" - Pauline Oliveros</h2> <!--TITLE-->
+          <h2>"Tuning Meditations" - Pauline Oliveros</h2>
+          <!--TITLE-->
           Tags:
           <p class="color-contrast-medium">All, Post-modern</p> <!-- TAGS -->
           <iframe class="spotify" src="https://open.spotify.com/embed/track/3XbDTMKj5IWjSPRahim9Y6?si=b2e2fb9631644b7c"
@@ -131,14 +155,15 @@
           <a href="#0" class="btn btn--subtle">Read more</a> <!-- BUTTON -->
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
-      
-      
-<!-- SECTION -->
-<div class="cd-timeline__block">
+
+
+      <!-- SECTION -->
+      <div class="cd-timeline__block">
         <div class="cd-timeline__img cd-timeline__img--picture"> <img src="assets/img/cd-icon-picture.svg"
             alt="Picture"> </div>
         <div class="cd-timeline__content text-component">
-          <h2>Curse Upon Iron - Tormis</h2> <!--TITLE-->
+          <h2>Curse Upon Iron - Tormis</h2>
+          <!--TITLE-->
           Tags:
           <p class="color-contrast-medium">All, !tags</p> <!-- TAGS -->
           <iframe class="spotify" src="https://open.spotify.com/embed/track/6VdeWdldfNibwF7uzJsld5?si=77db64d3f29843e3"
@@ -151,12 +176,13 @@
       </div> <!-- cd-timeline__block -->
 
 
-    <!-- SECTION -->
-    <div class="cd-timeline__block">
+      <!-- SECTION -->
+      <div class="cd-timeline__block">
         <div class="cd-timeline__img cd-timeline__img--picture"> <img src="assets/img/cd-icon-picture.svg"
             alt="Picture"> </div>
         <div class="cd-timeline__content text-component">
-          <h2>Credo - Pärt</h2> <!--TITLE-->
+          <h2>Credo - Pärt</h2>
+          <!--TITLE-->
           Tags:
           <p class="color-contrast-medium">All, !tags</p> <!-- TAGS -->
           <iframe class="spotify" src="https://open.spotify.com/embed/track/7HD7rrpdbDnspHa6nlnsRM?si=d86accc91e8941a7"
@@ -169,12 +195,13 @@
       </div> <!-- cd-timeline__block -->
 
 
-<!-- SECTION -->
-<div class="cd-timeline__block">
+      <!-- SECTION -->
+      <div class="cd-timeline__block">
         <div class="cd-timeline__img cd-timeline__img--picture"> <img src="assets/img/cd-icon-picture.svg"
             alt="Picture"> </div>
         <div class="cd-timeline__content text-component">
-          <h2>War Requiem, 1st movement: Requiem aeternam - Britten</h2> <!--TITLE-->
+          <h2>War Requiem, 1st movement: Requiem aeternam - Britten</h2>
+          <!--TITLE-->
           Tags:
           <p class="color-contrast-medium">All, !tags</p> <!-- TAGS -->
           <iframe class="spotify" src="https://open.spotify.com/embed/track/0r5guO2MOt1Crbj3joO1rk?si=beaf96066e884347"
@@ -186,12 +213,14 @@
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
 
-<!-- SECTION -->
+      <!-- SECTION -->
       <div class="cd-timeline__block">
         <div class="cd-timeline__img cd-timeline__img--picture"> <img src="assets/img/cd-icon-picture.svg"
             alt="Picture"> </div>
         <div class="cd-timeline__content text-component">
-          <h2>War Requiem, 3rd movement, Offertorium: Quam olim abrahae & So Abram rose and clave the wood - Britten</h2> <!--TITLE-->
+          <h2>War Requiem, 3rd movement, Offertorium: Quam olim abrahae & So Abram rose and clave the wood - Britten
+          </h2>
+          <!--TITLE-->
           Tags:
           <p class="color-contrast-medium">All, !tags</p> <!-- TAGS -->
           <iframe class="spotify" src="https://open.spotify.com/embed/track/4mVADoXGxYFm9lWm2IUMT3?si=cb103e35bdf641f5"
@@ -210,23 +239,24 @@
         </div> <!-- cd-timeline__img -->
 
         <div class="cd-timeline__content text-component">
-          <h2>Romantic</h2>
-          <p class="color-contrast-medium">Baroque</p>
+          <h2>Modern</h2>
+          <p class="color-contrast-medium">From 1900~1960, music saw a change from traditional elements of melody and
+            harmony towards aesthetic freedom.</p>
 
           <div class="flex justify-between items-center">
             <span class="cd-timeline__date">Feb 18</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
           </div>
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
 
-      
+
       <!-- SECTION -->
       <div class="cd-timeline__block">
         <div class="cd-timeline__img cd-timeline__img--picture"> <img src="assets/img/cd-icon-picture.svg"
             alt="Picture"> </div>
         <div class="cd-timeline__content text-component">
-          <h2>"Hoe-down" from Rodeo - Aaron Copeland</h2> <!--TITLE-->
+          <h2>"Hoe-down" from Rodeo - Aaron Copeland</h2>
+          <!--TITLE-->
           Tags:
           <p class="color-contrast-medium">All, Modern, Atonality, Folk, American</p> <!-- TAGS -->
           <iframe class="spotify" src="https://open.spotify.com/embed/track/7sEWxDFi4IuccgMnJ988Rk?si=d3e488a6d1f54632"
@@ -238,14 +268,15 @@
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
 
-      
 
-<!-- SECTION -->
-<div class="cd-timeline__block">
+
+      <!-- SECTION -->
+      <div class="cd-timeline__block">
         <div class="cd-timeline__img cd-timeline__img--picture"> <img src="assets/img/cd-icon-picture.svg"
             alt="Picture"> </div>
         <div class="cd-timeline__content text-component">
-          <h2>Quartet for the end of time, I. (Crystal Liturgy) - Messiaen</h2> <!--TITLE-->
+          <h2>Quartet for the end of time, I. (Crystal Liturgy) - Messiaen</h2>
+          <!--TITLE-->
           Tags:
           <p class="color-contrast-medium">All, !tags</p> <!-- TAGS -->
           <iframe class="spotify" src="https://open.spotify.com/embed/track/1acZHtdSxqTHjD5fv9elsv?si=57200ee25fb84e16"
@@ -257,12 +288,14 @@
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
 
-<!-- SECTION -->
+      <!-- SECTION -->
       <div class="cd-timeline__block">
         <div class="cd-timeline__img cd-timeline__img--picture"> <img src="assets/img/cd-icon-picture.svg"
             alt="Picture"> </div>
         <div class="cd-timeline__content text-component">
-          <h2>Quartet for the end of time, V. Louange a l'Eternite de Jesus (Praise to the Eternity of Jesus) - Messiaen</h2> <!--TITLE-->
+          <h2>Quartet for the end of time, V. Louange a l'Eternite de Jesus (Praise to the Eternity of Jesus) - Messiaen
+          </h2>
+          <!--TITLE-->
           Tags:
           <p class="color-contrast-medium">All, !tags</p> <!-- TAGS -->
           <iframe class="spotify" src="https://open.spotify.com/embed/track/1uDEFyMlKB0liU5b2XXYdi?si=91e8cbb93a404c58"
@@ -274,14 +307,15 @@
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
 
-      
 
-<!-- SECTION -->
-<div class="cd-timeline__block">
+
+      <!-- SECTION -->
+      <div class="cd-timeline__block">
         <div class="cd-timeline__img cd-timeline__img--picture"> <img src="assets/img/cd-icon-picture.svg"
             alt="Picture"> </div>
         <div class="cd-timeline__content text-component">
-          <h2>Carmina Burana Mov. 1 (O Fortuna) - Orff</h2> <!--TITLE-->
+          <h2>Carmina Burana Mov. 1 (O Fortuna) - Orff</h2>
+          <!--TITLE-->
           Tags:
           <p class="color-contrast-medium">All, !tags</p> <!-- TAGS -->
           <iframe class="spotify" src="https://open.spotify.com/embed/track/2d7139N7CJ9eJmGVE42Y44?si=f5cfa1629e834238"
@@ -293,13 +327,14 @@
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
 
-      
- <!-- SECTION -->
- <div class="cd-timeline__block">
+
+      <!-- SECTION -->
+      <div class="cd-timeline__block">
         <div class="cd-timeline__img cd-timeline__img--picture"> <img src="assets/img/cd-icon-picture.svg"
             alt="Picture"> </div>
         <div class="cd-timeline__content text-component">
-          <h2>Symphony 1 Mov. 1 - Shostakovich</h2> <!--TITLE-->
+          <h2>Symphony 1 Mov. 1 - Shostakovich</h2>
+          <!--TITLE-->
           Tags:
           <p class="color-contrast-medium">All, !tags</p> <!-- TAGS -->
           <iframe class="spotify" src="https://open.spotify.com/embed/track/2GR1ZhPIfyihdhaB0Q2uBb?si=54d0c90846cb46b7"
@@ -312,12 +347,29 @@
       </div> <!-- cd-timeline__block -->
 
 
- <!-- SECTION -->
- <div class="cd-timeline__block">
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--location">
+          <img src="assets/img/cd-icon-location.svg" alt="Location">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h2>Romantic</h2>
+          <p class="color-contrast-medium" style="display: none;">All, Post-modern</p>
+          <p class="color-contrast-medium">From 1800~1900, </p>
+
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date"></span>
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <!-- SECTION -->
+      <div class="cd-timeline__block">
         <div class="cd-timeline__img cd-timeline__img--picture"> <img src="assets/img/cd-icon-picture.svg"
             alt="Picture"> </div>
         <div class="cd-timeline__content text-component">
-          <h2>Symphony 4, first movement - Shostakovich</h2> <!--TITLE-->
+          <h2>Symphony 4, first movement - Shostakovich</h2>
+          <!--TITLE-->
           Tags:
           <p class="color-contrast-medium">All, !tags</p> <!-- TAGS -->
           <iframe class="spotify" src="https://open.spotify.com/embed/track/4dDza3cmy25Xtl78ACNZlw?si=cabd6021d3954452"
@@ -329,13 +381,14 @@
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
 
-      
+
       <!-- SECTION -->
       <div class="cd-timeline__block">
         <div class="cd-timeline__img cd-timeline__img--picture"> <img src="assets/img/cd-icon-picture.svg"
             alt="Picture"> </div>
         <div class="cd-timeline__content text-component">
-          <h2>Symphony No. 9 Mov. 2 "from the New World" - Dvorak</h2> <!--TITLE-->
+          <h2>Symphony No. 9 Mov. 2 "from the New World" - Dvorak</h2>
+          <!--TITLE-->
           Tags:
           <p class="color-contrast-medium">All, Romantic, American, Symphony</p> <!-- TAGS -->
           <iframe class="spotify" src="https://open.spotify.com/embed/track/1rci74bHqfuT3yv5NW7KOl?si=5fc4e0ee69244a41"
@@ -347,13 +400,14 @@
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
 
-      
+
       <!-- SECTION -->
       <div class="cd-timeline__block">
         <div class="cd-timeline__img cd-timeline__img--picture"> <img src="assets/img/cd-icon-picture.svg"
             alt="Picture"> </div>
         <div class="cd-timeline__content text-component">
-          <h2>Gymnopedie No. 1 - Erik Satie</h2> <!--TITLE-->
+          <h2>Gymnopedie No. 1 - Erik Satie</h2>
+          <!--TITLE-->
           Tags:
           <p class="color-contrast-medium">All, Modern, Atonality</p> <!-- TAGS -->
           <iframe class="spotify" src="https://open.spotify.com/embed/track/5NGtFXVpXSvwunEIGeviY3?si=927276e874bd4a8a"
@@ -365,13 +419,14 @@
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
 
-      
+
       <!-- SECTION -->
       <div class="cd-timeline__block">
         <div class="cd-timeline__img cd-timeline__img--picture"> <img src="assets/img/cd-icon-picture.svg"
             alt="Picture"> </div>
         <div class="cd-timeline__content text-component">
-          <h2>Symphony No. 1 Finale - Johannes Brahms</h2> <!--TITLE-->
+          <h2>Symphony No. 1 Finale - Johannes Brahms</h2>
+          <!--TITLE-->
           Tags:
           <p class="color-contrast-medium">All, Romantic</p> <!-- TAGS -->
           <iframe class="spotify" src="https://open.spotify.com/embed/track/1Tkl1ozi6NVUkSWFbXy4m6?si=c3329e61931e496d"
@@ -388,7 +443,8 @@
         <div class="cd-timeline__img cd-timeline__img--picture"> <img src="assets/img/cd-icon-picture.svg"
             alt="Picture"> </div>
         <div class="cd-timeline__content text-component">
-          <h2>Wotan's Farewell - Richard Wagner</h2> <!--TITLE-->
+          <h2>Wotan's Farewell - Richard Wagner</h2>
+          <!--TITLE-->
           Tags:
           <p class="color-contrast-medium">All, Late Romantic</p> <!-- TAGS -->
           <iframe class="spotify" src="https://open.spotify.com/embed/track/0XaNUlzpHk2xut1Q386sV7?si=3a33ca363a494a7a"
@@ -400,13 +456,14 @@
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
 
-      
-<!-- SECTION -->
-<div class="cd-timeline__block">
+
+      <!-- SECTION -->
+      <div class="cd-timeline__block">
         <div class="cd-timeline__img cd-timeline__img--picture"> <img src="assets/img/cd-icon-picture.svg"
             alt="Picture"> </div>
         <div class="cd-timeline__content text-component">
-          <h2>Symphony 9, 4th movement - Beethoven</h2> <!--TITLE-->
+          <h2>Symphony 9, 4th movement - Beethoven</h2>
+          <!--TITLE-->
           Tags:
           <p class="color-contrast-medium">All, !tags</p> <!-- TAGS -->
           <iframe class="spotify" src="https://open.spotify.com/embed/track/6UpnIAwDBvhkQmtPqcV1TA?si=c3460ef729504d28"
@@ -418,13 +475,14 @@
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
 
-      
-<!-- SECTION -->
-<div class="cd-timeline__block">
+
+      <!-- SECTION -->
+      <div class="cd-timeline__block">
         <div class="cd-timeline__img cd-timeline__img--picture"> <img src="assets/img/cd-icon-picture.svg"
             alt="Picture"> </div>
         <div class="cd-timeline__content text-component">
-          <h2>Symphony 5 Mov. 1 (Sonata) - Beethoven</h2> <!--TITLE-->
+          <h2>Symphony 5 Mov. 1 (Sonata) - Beethoven</h2>
+          <!--TITLE-->
           Tags:
           <p class="color-contrast-medium">All, !tags</p> <!-- TAGS -->
           <iframe class="spotify" src="https://open.spotify.com/embed/track/6cUCckpdlqHJ5Ascf2uH2A?si=0751349b89c64a7e"
@@ -437,12 +495,13 @@
       </div> <!-- cd-timeline__block -->
 
 
-<!-- SECTION -->
+      <!-- SECTION -->
       <div class="cd-timeline__block">
         <div class="cd-timeline__img cd-timeline__img--picture"> <img src="assets/img/cd-icon-picture.svg"
             alt="Picture"> </div>
         <div class="cd-timeline__content text-component">
-          <h2>Symphony 5, Mov. 2 (Th &V) - Beethoven</h2> <!--TITLE-->
+          <h2>Symphony 5, Mov. 2 (Th &V) - Beethoven</h2>
+          <!--TITLE-->
           Tags:
           <p class="color-contrast-medium">All, !tags</p> <!-- TAGS -->
           <iframe class="spotify" src="https://open.spotify.com/embed/track/21kGWCCRxcUZmNFO5JjEqY?si=9c01740ace4b41fb"
@@ -454,13 +513,14 @@
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
 
-      
+
       <!-- SECTION -->
       <div class="cd-timeline__block">
         <div class="cd-timeline__img cd-timeline__img--picture"> <img src="assets/img/cd-icon-picture.svg"
             alt="Picture"> </div>
         <div class="cd-timeline__content text-component">
-          <h2>Eroica Symphony No. 3 Mov. 1 - Beethoven</h2> <!--TITLE-->
+          <h2>Eroica Symphony No. 3 Mov. 1 - Beethoven</h2>
+          <!--TITLE-->
           Tags:
           <p class="color-contrast-medium">All, Romantic</p> <!-- TAGS -->
           <iframe class="spotify" src="https://open.spotify.com/embed/track/72KQwrzSxDM5iNzWOQc3eb?si=4aba3cdce4a14aa7"
@@ -472,13 +532,31 @@
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
 
+
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--location">
+          <img src="assets/img/cd-icon-location.svg" alt="Location">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h2>Classical</h2>
+          <p class="color-contrast-medium" style="display: none;">All, Classical</p>
+          <p class="color-contrast-medium">From 1730~1800, the Classical era</p>
+
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date"></span>
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
       
-<!-- SECTION -->
-<div class="cd-timeline__block">
+      <!-- SECTION -->
+      <div class="cd-timeline__block">
         <div class="cd-timeline__img cd-timeline__img--picture"> <img src="assets/img/cd-icon-picture.svg"
             alt="Picture"> </div>
         <div class="cd-timeline__content text-component">
-          <h2>Piano Concerto, K. 488, ii - Mozart</h2> <!--TITLE-->
+          <h2>Piano Concerto, K. 488, ii - Mozart</h2>
+          <!--TITLE-->
           Tags:
           <p class="color-contrast-medium">All, !tags</p> <!-- TAGS -->
           <iframe class="spotify" src="https://open.spotify.com/embed/track/5qtqQ05H33mXm83qgc444E?si=3dfbcee9bd3041f5"
@@ -490,34 +568,35 @@
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
 
-      
       <div class="cd-timeline__block">
         <div class="cd-timeline__img cd-timeline__img--location">
           <img src="assets/img/cd-icon-location.svg" alt="Location">
         </div> <!-- cd-timeline__img -->
 
         <div class="cd-timeline__content text-component">
-          <h2>Classical Era</h2>
-          <p class="color-contrast-medium">Baroque</p>
+          <h2>Baroque</h2>
+          <p class="color-contrast-medium" style="display: none;">All, Baroque</p>
+          <p class="color-contrast-medium">From 1600~1730, the Baroque era</p>
 
           <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Feb 18</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
+            <span class="cd-timeline__date"></span>
           </div>
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
 
-      
+
       <!-- SECTION -->
       <div class="cd-timeline__block">
         <div class="cd-timeline__img cd-timeline__img--picture"> <img src="assets/img/cd-icon-picture.svg"
             alt="Picture"> </div>
         <div class="cd-timeline__content text-component">
-          <h2>"Ich Folge Dir Gleichfalls" from St John Passion - JS Bach</h2> <!--TITLE-->
+          <h2>"Ich Folge Dir Gleichfalls" from St John Passion - JS Bach</h2>
+          <!--TITLE-->
           Tags:
-          <p class="color-contrast-medium">All, Medieval, Religious</p> <!-- TAGS -->
-          <iframe class="spotify" src=""https://open.spotify.com/embed/track/2nMeu6UenVvwUktBCpLMK9?utm_source=generator"
-            width="100%" height="380" frameBorder="0" allowfullscreen=""
+          <p class="color-contrast-medium">All, Baroque, Religious</p> <!-- TAGS -->
+          <iframe class="spotify" src="
+            https://open.spotify.com/embed/track/2nMeu6UenVvwUktBCpLMK9?utm_source=generator" width="100%" height="380"
+            frameBorder="0" allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
           <!-- SPOTIFY -->
           <span class="cd-timeline__date">1724</span> <!-- DATE -->
@@ -525,13 +604,14 @@
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
 
-      
-<!-- SECTION -->
-<div class="cd-timeline__block">
+
+      <!-- SECTION -->
+      <div class="cd-timeline__block">
         <div class="cd-timeline__img cd-timeline__img--picture"> <img src="assets/img/cd-icon-picture.svg"
             alt="Picture"> </div>
         <div class="cd-timeline__content text-component">
-          <h2>Cello Suite in G major, Prelude (i), BWV 1107 - Bach</h2> <!--TITLE-->
+          <h2>Cello Suite in G major, Prelude (i), BWV 1107 - Bach</h2>
+          <!--TITLE-->
           Tags:
           <p class="color-contrast-medium">All, Baroque</p> <!-- TAGS -->
           <iframe class="spotify" src="https://open.spotify.com/embed/track/17i5jLpzndlQhbS4SrTd0B?si=4056b33ba7f64fb1"
@@ -541,15 +621,16 @@
           <span class="cd-timeline__date">1720</span> <!-- DATE -->
           <a href="#0" class="btn btn--subtle">Read more</a> <!-- BUTTON -->
         </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block --> 
+      </div> <!-- cd-timeline__block -->
 
-      
-<!-- SECTION -->
-<div class="cd-timeline__block">
+
+      <!-- SECTION -->
+      <div class="cd-timeline__block">
         <div class="cd-timeline__img cd-timeline__img--picture"> <img src="assets/img/cd-icon-picture.svg"
             alt="Picture"> </div>
         <div class="cd-timeline__content text-component">
-          <h2>Actus Tragicus, 1. Sonatina - Bach</h2> <!--TITLE-->
+          <h2>Actus Tragicus, 1. Sonatina - Bach</h2>
+          <!--TITLE-->
           Tags:
           <p class="color-contrast-medium">All, Baroque</p> <!-- TAGS -->
           <iframe class="spotify" src="https://open.spotify.com/embed/track/1j5pY9nU4grm9Qh2KXGB7A?si=0f66dd161d914356"
@@ -561,15 +642,16 @@
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
 
-      
-<!-- SECTION -->
-<div class="cd-timeline__block">
+
+      <!-- SECTION -->
+      <div class="cd-timeline__block">
         <div class="cd-timeline__img cd-timeline__img--picture"> <img src="assets/img/cd-icon-picture.svg"
             alt="Picture"> </div>
         <div class="cd-timeline__content text-component">
-          <h2>Battalia (La Battaille) - Biber</h2> <!--TITLE-->
+          <h2>Battalia (La Battaille) - Biber</h2>
+          <!--TITLE-->
           Tags:
-          <p class="color-contrast-medium">All, !tags</p> <!-- TAGS -->
+          <p class="color-contrast-medium">All, Baroque</p> <!-- TAGS -->
           <iframe class="spotify" src="https://open.spotify.com/embed/track/0qZYebBCIRiKpAF53hcVv9?si=a487a43e81ea421e"
             width="100%" height="380" frameBorder="0" allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
@@ -579,15 +661,16 @@
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
 
-      
-<!-- SECTION -->
-<div class="cd-timeline__block">
+
+      <!-- SECTION -->
+      <div class="cd-timeline__block">
         <div class="cd-timeline__img cd-timeline__img--picture"> <img src="assets/img/cd-icon-picture.svg"
             alt="Picture"> </div>
         <div class="cd-timeline__content text-component">
-          <h2>La guerre - Jannequin</h2> <!--TITLE-->
+          <h2>La guerre - Jannequin</h2>
+          <!--TITLE-->
           Tags:
-          <p class="color-contrast-medium">All, !tags</p> <!-- TAGS -->
+          <p class="color-contrast-medium">All, Baroque</p> <!-- TAGS -->
           <iframe class="spotify" src="https://open.spotify.com/embed/track/3T81xjAAnUfTlfqKK4aNSK?si=f6849ff6bf1d43a6"
             width="100%" height="380" frameBorder="0" allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
@@ -597,14 +680,32 @@
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
 
-<!-- SECTION -->
-<div class="cd-timeline__block">
+
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--location">
+          <img src="assets/img/cd-icon-location.svg" alt="Location">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h2>Medieval</h2>
+          <p class="color-contrast-medium" style="display: none;">All, Medieval</p>
+          <p class="color-contrast-medium">From 600~1400, the Medieval era</p>
+
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date"></span>
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <!-- SECTION -->
+      <div class="cd-timeline__block">
         <div class="cd-timeline__img cd-timeline__img--picture"> <img src="assets/img/cd-icon-picture.svg"
             alt="Picture"> </div>
         <div class="cd-timeline__content text-component">
-          <h2>Agincourt Carol - Anonymous</h2> <!--TITLE-->
+          <h2>Agincourt Carol - Anonymous</h2>
+          <!--TITLE-->
           Tags:
-          <p class="color-contrast-medium">All, !tags</p> <!-- TAGS -->
+          <p class="color-contrast-medium">All, Medieval</p> <!-- TAGS -->
           <iframe class="spotify" src="https://open.spotify.com/embed/track/7kqAdpWu6jwODIZ3zxyKYR?si=b895abd0af2c444a"
             width="100%" height="380" frameBorder="0" allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
@@ -615,7 +716,7 @@
       </div> <!-- cd-timeline__block -->
 
 
-      
+
       <!-- SECTION -->
       <div class="cd-timeline__block">
         <div class="cd-timeline__img cd-timeline__img--picture"> <img src="assets/img/cd-icon-picture.svg"
@@ -637,89 +738,9 @@
       </div> <!-- cd-timeline__block -->
 
 
-      
 
 
 
-      <!-- SECTION -->
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--movie">
-          <img src="assets/img/cd-icon-movie.svg" alt="Movie">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content text-component">
-          <h2>ROMANTIC ERA</h2>
-          <p class="color-contrast-medium">All</p>
-
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Jan 18</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--picture">
-          <img src="assets/img/cd-icon-picture.svg" alt="Picture">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content text-component">
-          <h2>Big Block of Text</h2>
-          <p class="color-contrast-medium">a abcdefghijklmnopqrstuvwxysa abcdefghijklmnopqrstuvwxysa abcdefghijklmnopqrstuvwxysa abcdefghijklmnopqrstuvwxysa abcdefghijklmnopqrstuvwxysa abcdefghijklmnopqrstuvwxysa abcdefghijklmnopqrstuvwxysa abcdefghijklmnopqrstuvwxys</p>
-
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Jan 24</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--location">
-          <img src="assets/img/cd-icon-location.svg" alt="Location">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content text-component">
-          <h2>Section 4</h2>
-          <p class="color-contrast-medium">the quick brown fox jumps over the lazy egor.</p>
-
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Feb 14</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--location">
-          <img src="assets/img/cd-icon-location.svg" alt="Location">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content text-component">
-          <h2>Joe</h2>
-          <p class="color-contrast-medium">Baroque</p>
-
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Feb 18</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--movie">
-          <img src="assets/img/cd-icon-movie.svg" alt="Movie">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content text-component">
-          <h2>Final Section</h2>
-          <p class="color-contrast-medium">The world ends</p>
-
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Feb 26</span>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
     </div>
   </section> <!-- cd-timeline -->
   <script>
@@ -729,6 +750,7 @@
       console.log("chose tag", x);
       resort(x);
     }
+
     function MyTimeline(element) {
       this.element = element;
       this.blocks = this.element.getElementsByClassName("cd-timeline__block");
@@ -740,7 +762,8 @@
 
 
     function resort(tag) {
-      var myTimelines = document.getElementsByClassName("js-cd-timeline")[0].getElementsByClassName("cd-timeline__block"),
+      var myTimelines = document.getElementsByClassName("js-cd-timeline")[0].getElementsByClassName(
+          "cd-timeline__block"),
         songs = [],
         scrolling = false;
       if (myTimelines.length > 0) {
@@ -751,8 +774,7 @@
           console.log(stuff.tags)
           if (stuff.tags.includes(tag)) {
             section.style.display = '';
-          }
-          else {
+          } else {
             section.style.display = 'none';
           }
 
@@ -768,66 +790,79 @@
 
       }
     }
-
   </script>
   <script>
     var spotifies = document.getElementsByClassName("spotify");
     for (var i = 0; i < spotifies.length; i++) {
       spotifies[i].style.height = '80px';;
     }
+    var large = false;
+
+    function spotifyFunction() {
+      for (var i = 0; i < spotifies.length; i++) {
+        spotifies[i].style.height = large ? '380px' : '80px';
+        spotifies[i].style.width = large ? '60%' : '100%';
+      }
+      large = !large;
+    };
   </script>
 
   <script src="assets/js/main.js">
 
   </script>
-<button onclick="topFunction()" id="myBtn" title="Go to top">Jump to Top</button>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Jump to Top</button>
 
-<style>
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    color: white;
-  }
-  
-  #myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    font-size: 18px;
-    
-    border: none;
-    outline: none;
-  background-color: #FF9800;
-    cursor: pointer;
-    padding: 15px;
-    color:white;
-    border-radius: 7px;
-  }.content {
-  width: 77%;
-  margin: 50px auto;
-  font-family: 'Merriweather', serif;
-  font-size: 17px;
-  color: white;
-  line-height: 1.9;
-}
-  
-  #myBtn:hover {  
-    background-color: #FF5800;
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      color: white;
+    }
 
-  }
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+
+      border: none;
+      outline: none;
+      background-color: #FF9800;
+      cursor: pointer;
+      padding: 15px;
+      color: white;
+      border-radius: 7px;
+    }
+
+    .content {
+      width: 77%;
+      margin: 50px auto;
+      font-family: 'Merriweather', serif;
+      font-size: 17px;
+      color: white;
+      line-height: 1.9;
+    }
+
+    #myBtn:hover {
+      background-color: #FF5800;
+
+    }
   </style>
-    </head>
-    <body>
-    
+  </head>
+
+  <body>
+
     <script>
       //Get the button
       var mybutton = document.getElementById("myBtn");
-      
+
       // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function() {scrollFunction()};
-      
+      window.onscroll = function () {
+        scrollFunction()
+      };
+
       function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
           mybutton.style.display = "block";
@@ -835,14 +870,15 @@
           mybutton.style.display = "none";
         }
       }
-      
+
+
       // When the user clicks on the button, scroll to the top of the document
       function topFunction() {
         var elmnt = document.getElementsByClassName("cd-main-header")[0];
-      elmnt.scrollIntoView();
+        elmnt.scrollIntoView();
       }
-      </script>
-      
-</body>
+    </script>
+
+  </body>
 
 </html>
