@@ -781,6 +781,7 @@
 
     </div>
   </section> <!-- cd-timeline -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script>
     function sortTags() {
       hideAll();
@@ -800,19 +801,23 @@
 
 
     function resort(tag) {
-      var myTimelines = document.getElementsByClassName("js-cd-timeline")[0].getElementsByClassName(
-          "cd-timeline__block"),
+      var myTimelines = document.getElementsByClassName("js-cd-timeline")[0].getElementsByClassName("cd-timeline__block"),
         songs = [],
         scrolling = false;
       if (myTimelines.length > 0) {
+        //$('<hidden>').unwrap();
         for (var i = 0; i < myTimelines.length; i++) {
           console.log("POOP", myTimelines[i]);
           section = myTimelines[i];
           stuff = new MyTimeline(myTimelines[i])
           console.log(stuff.tags)
           if (stuff.tags.includes(tag)) {
+            if(section.style.display === 'none'){
+              //$(section).unwrap('<hidden>');
+              }
             section.style.display = '';
           } else {
+            //$(section).wrap('<hidden>');
             section.style.display = 'none';
           }
 

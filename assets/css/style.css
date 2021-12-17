@@ -196,6 +196,9 @@ svg {
   --max-width-xl: 90rem;
   --max-width-xxl: 120rem;
 }
+.footer {
+  font-size: large;
+}
 .container {
   width: calc(100% - 1.25em);
   width: calc(100% - 2 * var(--component-padding));
@@ -1015,7 +1018,6 @@ h1,
 h2,
 .text-xl {
   font-size: 1.428em;
-  
 }
 h3,
 .text-lg {
@@ -3174,18 +3176,27 @@ mark {
 .cd-main-header {
   height: 100px;
   height: var(--cd-header-height);
-  background: #0F2027;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   color: hsl(0, 0%, 100%);
   color: var(--color-white);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-    font-weight: 900;
-    letter-spacing: 2px;
-    margin: 20
-
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin: 20;
 }
 .cd-main-header h1 {
   font-family: "Open Sans", sans-serif;
@@ -3241,12 +3252,22 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
   position: relative;
   z-index: 1;
   margin-bottom: 1em;
+  transition: 0.5s ease;
+}
+.cd-timeline__img{
+  transition: 0.5s ease;
+}
+.cd-timeline__img:hover {
+  transition: 0.5s ease;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+  
 }
 .cd-timeline__block:last-child {
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 @media (min-width: 64rem) {
-  .cd-timeline__block:nth-child(even) {
+  .cd-timeline__block:nth-of-type(even) {
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
   }
@@ -3288,12 +3309,11 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
     margin-left: calc(5% - 30px);
     will-change: transform;
   }
-  .cd-timeline__block:nth-child(even) .cd-timeline__img {
+  .cd-timeline__block:nth-of-type(even) .cd-timeline__img {
     margin-right: calc(5% - 30px);
   }
 }
 .cd-timeline__img--picture {
-  
 }
 .cd-timeline__img--movie {
   background-color: hsl(356, 53%, 49%);
@@ -3309,9 +3329,8 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
   position: relative;
   margin-left: 1.25em;
   margin-left: var(--space-md);
-  background: #70e1f5;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #ffffff, #76eaff);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #ffffff, rgba(244, 253, 255, 0.568)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ffffff; /* fallback for old browsers */
+  
 
   border-radius: 0.25em;
   border-radius: var(--radius-md);
@@ -3348,7 +3367,7 @@ background: linear-gradient(to right, #ffffff, rgba(244, 253, 255, 0.568)); /* W
   .cd-timeline__content::before {
     top: 24px;
   }
-  .cd-timeline__block:nth-child(odd) .cd-timeline__content::before {
+  .cd-timeline__block:nth-of-type(odd) .cd-timeline__content::before {
     right: auto;
     left: 100%;
     width: 0;
@@ -3376,7 +3395,7 @@ background: linear-gradient(to right, #ffffff, rgba(244, 253, 255, 0.568)); /* W
     left: 120%;
     top: 20px;
   }
-  .cd-timeline__block:nth-child(even) .cd-timeline__date {
+  .cd-timeline__block:nth-of-type(even) .cd-timeline__date {
     left: auto;
     right: 120%;
     text-align: right;
@@ -3395,7 +3414,7 @@ background: linear-gradient(to right, #ffffff, rgba(244, 253, 255, 0.568)); /* W
     -webkit-animation: cd-bounce-2 0.6s;
     animation: cd-bounce-2 0.6s;
   }
-  .cd-timeline__block:nth-child(even) .cd-timeline__content--bounce-in {
+  .cd-timeline__block:nth-of-type(even) .cd-timeline__content--bounce-in {
     -webkit-animation-name: cd-bounce-2-inverse;
     animation-name: cd-bounce-2-inverse;
   }
