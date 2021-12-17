@@ -198,6 +198,7 @@ svg {
 }
 .footer {
   font-size: large;
+  margin: 30px;
 }
 .container {
   width: calc(100% - 1.25em);
